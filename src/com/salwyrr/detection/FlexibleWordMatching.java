@@ -56,7 +56,7 @@ public class FlexibleWordMatching {
 	 * @param text text to search in
 	 * @return All matching results
 	 */
-	public static ArrayList<String> searchMatchInText(String text) {
+	public static ArrayList<String> searchMatchesInText(String text) {
 		text = FlexibleWordMatching.normalize(text);
 		String[] words = text.split(" ");
 		

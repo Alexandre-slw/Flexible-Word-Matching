@@ -2,6 +2,7 @@
  Find words in text where common detection bypass are used such as '*' or word splitting using spaces or even some word alteration
 
 # Basic example
+
 ```Java
 import com.salwyrr.detection.FlexibleWordMatching;
 
@@ -18,7 +19,7 @@ public class Test {
         String userMessage = "I love s al Wyyy r, that is the b*st thing ever";
 
         // Compute and display matches
-        ArrayList<String> matches = FlexibleWordMatching.searchMatchInText(userMessage);
+        ArrayList<String> matches = FlexibleWordMatching.searchMatchesInText(userMessage);
 
         for (String match : matches) {
             System.out.println(match);
