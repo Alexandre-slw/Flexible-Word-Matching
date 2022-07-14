@@ -5,7 +5,7 @@
 # Basic example
 
 ```Java
-import com.salwyrr.detection.FlexibleWordMatching;
+import com.salwyrr.detection.*;
 
 import java.util.ArrayList;
 
