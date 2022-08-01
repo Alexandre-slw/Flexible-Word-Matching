@@ -13,6 +13,7 @@ public class Test {
 		simpleTest();
 		interpretTest();
 		customNormalization();
+		cyrillicDetection();
 	}
 
 	/*
@@ -74,4 +75,26 @@ public class Test {
 			System.out.println(match.getOriginal());
 		}
 	}
+
+	/*
+	 * Detect words when cyrillic letters are used to bypass
+	 */
+	public static void cyrillicDetection() {
+		FlexibleWordMatching wordMatching = new FlexibleWordMatching(TextNormalizer.cyrillicToLatin(), TextNormalizer.onlyLatin());
+
+		// Add words to detect
+		wordMatching.addWords("Salwyrr");
+
+		// Source text, here a user message, the "а" is a cyrillic letter
+		String userMessage = "sаlwyrr";
+
+		// Compute and display matches
+		ArrayList<WordEntry> matches = wordMatching.searchMatchesInText(userMessage);
+
+		System.out.println("\nCyrillic --");
+		for (WordEntry match : matches) {
+			System.out.println(match.getOriginalWithSpaces());
+		}
+	}
+
 }
