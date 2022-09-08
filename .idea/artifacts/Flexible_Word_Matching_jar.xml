@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Flexible-Word-Matching:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Flexible_Word_Matching_jar</output-path>
+    <root id="archive" name="Flexible-Word-Matching.jar">
+      <element id="module-output" name="Flexible-Word-Matching" />
+    </root>
+  </artifact>
+</component>

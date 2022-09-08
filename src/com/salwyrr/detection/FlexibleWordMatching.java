@@ -42,6 +42,13 @@ public class FlexibleWordMatching {
 		}
 	}
 
+	/**
+	 * @return The list of words to detect
+	 */
+	public LinkedHashMap<WordEntry, Predicate<WordEntry>[]> getWordsToDetect() {
+		return this.wordsToDetect;
+	}
+
 	/*
 	 * First step normalization to make comparaison easier
 	 */
